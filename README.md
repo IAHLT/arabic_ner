@@ -1,1 +1,2 @@
-# arabic_ner
+
+## Documentation for Arabic NER IAHLT corpus
