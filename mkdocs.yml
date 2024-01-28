@@ -48,6 +48,7 @@ nav:
   - Training: training.md
   - Evaluation: evaluation.md
   - Models: usage.md
+  - Annotation Guideline: annotation.md
 
 
 extra:
