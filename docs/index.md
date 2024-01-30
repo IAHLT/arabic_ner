@@ -71,7 +71,7 @@ Need to install the `datasets` library:
 ```bash
 pip install datasets
 ```
-and login to the HuggingFace API using the given token:
+and login to the HuggingFace API using [the given token](access.md):
 
 ```bash
 huggingface-cli login # insert your token when prompted
