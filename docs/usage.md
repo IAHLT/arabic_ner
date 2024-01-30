@@ -20,7 +20,7 @@ Models can be loaded from the HuggingFace Hub according to their name:
 - iahlt/xlm-roberta-base-ar-ner-mafat-fold4
 - iahlt/xlm-roberta-base-ar-ner-mafat (trained on 90%/10% train/validation split)
 
-But before you can load the model, you need to login to the HuggingFace API using the given token:
+But before you can load the model, you need to login to the HuggingFace API using [the given token](access.md):
 
 ```sh
 huggingface-cli login # insert your token when prompted
