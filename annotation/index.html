@@ -449,6 +449,46 @@
 
 
 <h1 id="annotation-guideline">Annotation Guideline</h1>
+<p><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Scheherazade+New"></p>
+<style>
+.person {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #0069B4; border-radius: 1px; font-family: "Scheherazade New";
+}
+.location {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #28A745; border-radius: 1px; font-family: "Scheherazade New";
+}
+.org {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #17A2B8; border-radius: 1px; font-family: "Scheherazade New";
+}
+.fac {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #721817; border-radius: 1px; font-family: "Scheherazade New";
+}
+.event {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #2B4162; border-radius: 1px; font-family: "Scheherazade New";
+}
+.gpe {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: black; background-color: #FFC107; border-radius: 1px; font-family: "Scheherazade New";
+}
+.product {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #FA9F42; border-radius: 1px; font-family: "Scheherazade New";
+}
+.woa {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #0B6E4F; border-radius: 1px; font-family: "Scheherazade New";
+}
+.ttl {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #FA8B1B; border-radius: 1px; font-family: "Scheherazade New";
+}
+.language {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #437F97; border-radius: 1px; font-family: "Scheherazade New";
+}
+.timex {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: white; background-color: #849324; border-radius: 1px; font-family: "Scheherazade New";
+}
+.misc {
+    padding: .2em .2em; font-size: 80%; font-weight: 700; display:inline; margin-right: 1px; color: black; background-color: #e7d2e4; border-radius: 1px; font-family: "Scheherazade New";
+}
+</style>
+
 <body><p><strong>IAHLT Guidelines for Named Entity Annotation – Arabic</strong></p>
 <p><strong>Introduction</strong></p>
 <p>This document aims to serve as a draft proposal for entity classification، based on two schemas:</p>
@@ -517,15 +557,15 @@
 <p>Pertains to names of individual people, whether fictional or real-life.</p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li> ولد <strong>[إبراهيم طوقان]<sup>PER</sup></strong> في بيئة ثقافية وفكرية جيدة.</li>
-    <li>ذلك دفع <strong>[فدوى طوقان]<sup>PER</sup></strong> إلى المشاركة في الحياة السياسية خلال [الخمسينيات من القرن
+    <li> ولد <strong class="person">[إبراهيم طوقان]<sup>PER</sup></strong> في بيئة ثقافية وفكرية جيدة.</li>
+    <li>ذلك دفع <strong class="person">[فدوى طوقان]<sup>PER</sup></strong> إلى المشاركة في الحياة السياسية خلال [الخمسينيات من القرن
         الماضي]<sup>TIMEX</sup>.
     </li>
-    <li>من بين رؤساء السلطات الذين حضروا اللقاء كان: <strong>[سمير محاميد]<sup>PER</sup></strong> من [أم
-        الفحم]<sup>GPE</sup>، <strong>[رائد دقة]<sup>PER</sup></strong> من [باقة الغربية]<sup>GPE</sup>، <strong>[أحمد
-            الأسد]<sup>PER</sup></strong> من [اللقية]<sup>GPE</sup>، <strong>[علي سلام]<sup>PER</sup></strong> من
-        [الناصرة]<sup>GPE</sup>، <strong>[أيمن مرعي]<sup>PER</sup></strong> من [الفريديس]<sup>GPE</sup>، <strong>[عمر
-            أبو رقيق]<sup>PER</sup></strong> من [تل السبع]<sup>GPE</sup> و<strong>[ابراهيم
+    <li>من بين رؤساء السلطات الذين حضروا اللقاء كان: <strong class="person">[سمير محاميد]<sup>PER</sup></strong> من [أم
+        الفحم]<sup>GPE</sup>، <strong class="person">[رائد دقة]<sup>PER</sup></strong> من [باقة الغربية]<sup>GPE</sup>، <strong class="person">[أحمد
+            الأسد]<sup>PER</sup></strong class="gpe"> من [اللقية]<sup>GPE</sup>، <strong class="person">[علي سلام]<sup>PER</sup></strong> من
+        [الناصرة]<sup>GPE</sup>، <strong class="person">[أيمن مرعي]<sup>PER</sup></strong class="gpe"> من [الفريديس]<sup>GPE</sup>، <strong class="person">[عمر
+            أبو رقيق]<sup>PER</sup></strong class="gpe"> من [تل السبع]<sup>GPE</sup> و<strong class="person">[ابراهيم
             الهواشلة]<sup>PER</sup></strong> من [واحة الصحراء]<sup>GPE</sup>.​"
     </li>
 </ol>
@@ -533,16 +573,16 @@
     tagged as WOA. For example:</p>
 <ol style="direction: rtl;">
     <li><a id="_Hlk97041565"></a>ناقشت رواية [امرأة عند نقطة الصفر]<sup>WOA</sup> أشكال قهر الرجل للمرأة جسدياً ونفسياً،
-        وذلك من خلال شخصية محورية وهي <strong>[فردوس]<sup>PER</sup></strong>.
+        وذلك من خلال شخصية محورية وهي <strong class="person">[فردوس]<sup>PER</sup></strong>.
     </li>
-    <li>شجرة شوح (شجرة العيد) مضاءة، ملابس <strong>[بابا نويل]<sup>PER</sup></strong>، لحم على النار وكمامة على الأنف.
+    <li>شجرة شوح (شجرة العيد) مضاءة، ملابس <strong class="person">[بابا نويل]<sup>PER</sup></strong>، لحم على النار وكمامة على الأنف.
     </li>
 </ol>
 <p>In case of an ellipsis, where two first names are followed by a single surname – the first will be annotated by its
     own; and the second will be treated as one unit with the last name, forming a single entity:</p>
 <ol style="direction: rtl;">
     <li>[جبران خليل جبران]<sup>PER</sup>، [إيليا أبو ماضى]<sup>PER</sup> ، [سعيد عقل]<sup>PER</sup> ، [نزار قباني]<sup>PER </sup>والأخوين
-        <strong>[إبراهيم]<sup>PER</sup> و[فدوى طوقان]<sup>PER</sup></strong>.
+        <strong class="person">[إبراهيم]<sup>PER</sup> و[فدوى طوقان]<sup>PER</sup></strong>.
     </li>
 </ol>
 <p>Family names, when the reference is to the family as a whole and not to a person, should not be tagged:</p>
@@ -551,7 +591,7 @@
 </ol>
 <p>Opposed to:</p>
 <ol style="direction: rtl;">
-    <li>كسب خطاب <strong>[عرفات]<sup>PER</sup> </strong>التعاطف مع [القضية الفلسطينية]<sup>MISC</sup>على الساحة الدولية.
+    <li>كسب خطاب <strong class="person">[عرفات]<sup>PER</sup> </strong>التعاطف مع [القضية الفلسطينية]<sup>MISC</sup>على الساحة الدولية.
     </li>
 </ol>
 <p><strong>ORG</strong></p>
@@ -561,40 +601,40 @@
 <p>Generic names such as “the government” and “the ministry” should not be tagged as ORG.</p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li>مُنحت <strong>[السلطة الفلسطينية]<sup>ORG</sup></strong> بعض السلطات والمسئوليات المحدودة في المنطقة "أ" و "ب".
+    <li>مُنحت <strong class="org">[السلطة الفلسطينية]<sup>ORG</sup></strong> بعض السلطات والمسئوليات المحدودة في المنطقة "أ" و "ب".
     </li>
-    <li>أعلنت <strong>[وزارة الشؤون الخارجية الإسرائيلية]<sup>ORG</sup></strong> أن الهدف الرئيسي من الاتفاقية
+    <li>أعلنت <strong class="org">[وزارة الشؤون الخارجية الإسرائيلية]<sup>ORG</sup></strong> أن الهدف الرئيسي من الاتفاقية
         الانتقالية توسيع الحكم الذاتي الفلسطيني.
     </li>
-    <li>احتفلت <strong>[جامعة [بيرزيت]<sup>GPE</sup>]<sup>ORG</sup></strong> [عام 1976]<sup>TIMEX</sup> بتخريج فوجها
+    <li>احتفلت <strong class="gpe">[جامعة [بيرزيت]<sup>GPE</sup>]<sup>ORG</sup></strong> [عام 1976]<sup>TIMEX</sup> بتخريج فوجها
         الأول.
     </li>
-    <li>بدأت فكرة تأسيس [المتحف الفلسطيني]<sup>FAC</sup><strong> </strong>بمبادرة من أعضاء مجلس أمناء <strong>[مؤسسة
+    <li>بدأت فكرة تأسيس [المتحف الفلسطيني]<sup>FAC</sup><strong> </strong>بمبادرة من أعضاء مجلس أمناء <strong class="org">[مؤسسة
         التعاون]<sup>ORG</sup></strong> في [عام 1997]<sup>TIMEX</sup> تخليداً للذكرى الخمسين ل[لنكبة]<sup>EVE</sup>.
     </li>
-    <li>تم اعداده من قبل مؤسسة<strong> [أوكسفام]<sup>ORG</sup>،</strong> تمت كتابته وإنتاجه من خلال <strong>[مؤسسة آرت
-        لاب]<sup>ORG</sup></strong>، بتمويل من <strong>[الاتحاد الأوروبي]<sup>ORG</sup></strong>.
+    <li>تم اعداده من قبل مؤسسة<strong class="org"> [أوكسفام]<sup>ORG</sup>،</strong> تمت كتابته وإنتاجه من خلال <strong class="org">[مؤسسة آرت
+        لاب]<sup>ORG</sup></strong>، بتمويل من <strong class="org">[الاتحاد الأوروبي]<sup>ORG</sup></strong>.
     </li>
-    <li>بعد الجلسة قام <strong>[مكتب [رئيس الحكومة]<sup>TTL</sup>]<sup>ORG</sup></strong> بنشر بلاغ تفاؤلي بموجبه "تم
-        الاتفاق على أن يقوم [مكتب <strong>[رئيس الحكومة]<sup>TTL</sup>]<sup>ORG</sup></strong>، <strong>[وزارة
-            المالية]<sup>ORG</sup></strong> و<strong>[وزارة التعاون الإقليمي]<sup>ORG</sup></strong> على الفور بوضع خطة
+    <li>بعد الجلسة قام <strong class="ttl">[مكتب [رئيس الحكومة]<sup>TTL</sup>]<sup>ORG</sup></strong> بنشر بلاغ تفاؤلي بموجبه "تم
+        الاتفاق على أن يقوم [مكتب <strong class="ttl">[رئيس الحكومة]<sup>TTL</sup>]<sup>ORG</sup></strong>، <strong class="org">[وزارة
+            المالية]<sup>ORG</sup></strong> و<strong class="org">[وزارة التعاون الإقليمي]<sup>ORG</sup></strong> على الفور بوضع خطة
         خماسية لتطوير وتعزيز البلدات الدرزية والشركسية، والذي سيدرج تمويله في ميزانية الدولة.
     </li>
-    <li>اليوم ينتظر المعهد مصادقة <strong>[وزارة الصحة]<sup>ORG</sup></strong> للبدء في تجربة المرحلة الثالثة والأخيرة
+    <li>اليوم ينتظر المعهد مصادقة <strong class="org">[وزارة الصحة]<sup>ORG</sup></strong> للبدء في تجربة المرحلة الثالثة والأخيرة
         في التطوير.
     </li>
-    <li>خلال الصيف الأخير استثمرت <strong>[حكومة [الولايات المتحدة الأمريكية]<sup>GPE</sup>]<sup>ORG</sup></strong> أكثر
-        من 2.48 مليار دولار في هبات الأبحاث وفي شراء مبكر لجرعات التطعيم من <strong>[مودرنا]<sup>ORG</sup></strong>، و2
-        مليار دولار في شراء مبكر لجرعات التطعيم من <strong>[فايزر]<sup>ORG</sup></strong>.
+    <li>خلال الصيف الأخير استثمرت <strong class="org">[حكومة [الولايات المتحدة الأمريكية]<sup>GPE</sup>]<sup>ORG</sup></strong> أكثر
+        من 2.48 مليار دولار في هبات الأبحاث وفي شراء مبكر لجرعات التطعيم من <strong class="org">[مودرنا]<sup>ORG</sup></strong>، و2
+        مليار دولار في شراء مبكر لجرعات التطعيم من <<strong class="org">[فايزر]<sup>ORG</sup></strong>.
     </li>
-    <li>وجدت دراسة أجرتها جمعية <strong>'[نساء ضد العنف]<sup>ORG</sup>' </strong>عدم مساواة بين اليهود والعرب في معاملة
-        الشرطة للعنف الأسري وسلوك <strong>[مكتب [النائب العام]<sup>TTL</sup>]<sup>ORG</sup></strong> وحتى مدة عقوبة
+    <li>وجدت دراسة أجرتها جمعية <strong class="org">'[نساء ضد العنف]<sup>ORG</sup>' </strong>عدم مساواة بين اليهود والعرب في معاملة
+        الشرطة للعنف الأسري وسلوك <strong class="org">[مكتب [النائب العام]<sup>TTL</sup>]<sup>ORG</sup></strong> وحتى مدة عقوبة
         السجن للمُجرمين.
     </li>
-    <li>كذلك شركة <strong>[طيفع]<sup>ORG</sup></strong>، بعد أن لم تكن عمليا بملكية اسرائيلية، أعلنت في [عام 2017]<sup>TIMEX</sup>
+    <li>كذلك شركة <strong class="org">[طيفع]<sup>ORG</sup></strong>، بعد أن لم تكن عمليا بملكية اسرائيلية، أعلنت في [عام 2017]<sup>TIMEX</sup>
         عن إغلاق مصانع في [إسرائيل]<sup>GPE</sup> وأقالت 1.700 عامل، في أعقاب تباطؤ في وتيرة ارتفاع أسهمها.
     </li>
-    <li>بدأ هذا الإجراء في البرنامج الصباحي ل<strong>[إذاعة الجيش الإسرائيلي]<sup>ORG </sup>([غالي تساهل]<sup>ORG</sup>).</strong>
+    <li>بدأ هذا الإجراء في البرنامج الصباحي ل<strong class="org">[إذاعة الجيش الإسرائيلي]<sup>ORG </sup>([غالي تساهل]<sup>ORG</sup>).</strong>
     </li>
 </ol>
 <p>Religious institutions, higher education institutions, hospitals, hotels, museums and so on should be labeled ORG
@@ -602,17 +642,17 @@
     should be tagged FAC). </p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li>استنكرت <strong>[​نقابة الأطباء]<sup>ORG</sup></strong> في [بيروت]<sup>GPE </sup>الاعتداء على أطباء قسم الطوارئ
-        في <strong>​[مستشفى المقاصد]<sup>FAC</sup></strong> ​بالضرب والتهديد والذم والقدح.
+    <li>استنكرت <strong class="org">[​نقابة الأطباء]<sup>ORG</sup></strong> في [بيروت]<sup>GPE </sup>الاعتداء على أطباء قسم الطوارئ
+        في <strong class="fac">​[مستشفى المقاصد]<sup>FAC</sup></strong> ​بالضرب والتهديد والذم والقدح.
     </li>
 </ol>
 <p>Sports teams will be tagged ORG also when referred to by the GPE entity that they represent. Consider, for example,
     the two different uses of [طوباس] in this sentence:</p>
 <ol style="direction: rtl;">
-    <li>بعد الهدف الطوباسي مباشرة أتت صافرة الحكم لينتهي الشوط الأول بتقدم <strong>[طوباس]<sup>ORG</sup></strong> بهدف
+    <li>بعد الهدف الطوباسي مباشرة أتت صافرة الحكم لينتهي الشوط الأول بتقدم <strong class="org">[طوباس]<sup>ORG</sup></strong> بهدف
         نظيف.
     </li>
-    <li>في ذلك الوقت، لعبت [حسين]<sup>PER</sup> في <strong>[تسور شالوم]<sup>ORG</sup>.</strong> <strong>(القصد هنا لفريق
+    <li>في ذلك الوقت، لعبت [حسين]<sup>PER</sup> في <strong class="org">[تسور شالوم]<sup>ORG</sup>.</strong> <strong>(القصد هنا لفريق
         تسور شالوم)</strong></li>
 </ol>
 <p> Compare with:</p>
@@ -624,7 +664,7 @@
 <p>This category also includes government agencies. Thus, in mentions of ministers heading a government office, the name
     of the office should be tagged as ORG:</p>
 <ol style="direction: rtl;">
-    <li>كما عمل اشتية [وزيرًا ل<strong>[الأشغال العامة والإسكان]<sup>ORG</sup></strong>]<sup>TTL</sup><strong> </strong>و[وزيرًا
+    <li>كما عمل اشتية [وزيرًا ل<strong class="org">[الأشغال العامة والإسكان]<sup>ORG</sup></strong>]<sup>TTL</sup><strong> </strong>و[وزيرًا
         ل<strong>[المجلس الاقتصادي الفلسطيني </strong><br><strong>للتنمية
             والإعمار]<sup>TTL</sup>[<sup>ORG</sup>.</strong></li>
     <li>صادق [مجلس أراضي [إسرائيل]<sup>GPE</sup>]<sup>ORG </sup>على خطة [وزير<strong> [البناء
@@ -636,12 +676,12 @@
 <ol style="direction: rtl;">
     <li>تقول [عنبال حرموني]<sup>PER</sup>، [رئيسة [نقابة العاملين الاجتماعيين]<sup>ORG</sup>]<sup>TTL</sup> في
         [الهستدروت]<sup>ORG</sup>، إن النقابة تطلب من<strong> </strong>[وزارة المالية]<sup>ORG</sup>
-        <strong>و[الرفاه]<sup>ORG</sup> </strong>أن تنشئ على الفور هيئة الأمن للعاملين الاجتماعيين في السلطات المحلية.
+        <strong class="org">و[الرفاه]<sup>ORG</sup> </strong>أن تنشئ على الفور هيئة الأمن للعاملين الاجتماعيين في السلطات المحلية.
     </li>
-    <li>يشير الإقتراح إلى أن استيعاب العمال الفلسطينيين يتيح تقديم استجابة سواء على ضائقة تشغيل هؤلاء العمال في <strong>[السلطة]<sup>GPE</sup>،</strong>
+    <li>يشير الإقتراح إلى أن استيعاب العمال الفلسطينيين يتيح تقديم استجابة سواء على ضائقة تشغيل هؤلاء العمال في <strong class="gpe">[السلطة]<sup>GPE</sup>،</strong>
         أو على صعوبات التجنيد في الشركات الإسرائيلية.
     </li>
-    <li>ربما ستقوم [وزارة المالية]<sup>ORG</sup> بتقليصها من الوزارات الحكومية، <strong>[التربية والتعليم]<sup>ORG</sup>
+    <li>ربما ستقوم [وزارة المالية]<sup>ORG</sup> بتقليصها من الوزارات الحكومية، <strong class="org">[التربية والتعليم]<sup>ORG</sup>
         و[الصحة]<sup>ORG</sup> و[الرعاية الاجتماعية]<sup>ORG</sup>.</strong></li>
     <li>في [عام 1988]<sup>TIMEX</sup> تبنت <strong>[منظمة التحرير]<sup>GPE</sup> </strong>رسميا خيار الدولتين في [فلسطين
         التاريخية]<sup>LOC</sup>.
@@ -658,12 +698,12 @@
     depending on the context whether the entity is referring to the organization itself or the area which it rules:</p>
 <ol style="direction: rtl;">
     <li>الإغلاق الأول، وعلى وجه الخصوص إغلاق فرع البناء في [اسرائيل]<sup>GPE</sup>، أدى إلى ضربة اقتصادية صعبة في
-        <strong>[السلطة الفلسطينية]<sup>GPE</sup>.</strong></li>
+        <strong class="gpe">[السلطة الفلسطينية]<sup>GPE</sup>.</strong></li>
 </ol>
 <p>Unofficial names of organizations will be tagged as ORG, such as “the Israeli Army” (instead of “the Israel Defense
     Forces”), or </p>
 <ol style="direction: rtl;">
-    <li><strong>[الجيش الإسرائيلي]<sup>ORG</sup></strong> هو من درّب معظم المتطوعين الخاصين بي في [سوريا]<sup>GPE</sup>.
+    <li><strong class="org">[الجيش الإسرائيلي]<sup>ORG</sup></strong> هو من درّب معظم المتطوعين الخاصين بي في [سوريا]<sup>GPE</sup>.
     </li>
 </ol>
 <p><strong>LOC</strong></p>
@@ -679,27 +719,27 @@
     <li>نموذج واضح عن ذلك بشكل خاص، هي الفئة السكانية في القرى غير المعترف بها في <strong>[النقب]<sup>LOC</sup></strong>.
     </li>
     <li>"لدينا مدرسة للأطفال ذوي الإعاقة المتوسطة حتى الصعبة، والتي تخدم الطلاب من جميع أنحاء منطقة
-        <strong>[المثلث]<sup>LOC</sup></strong>".
+        <strong class="location">[المثلث]<sup>LOC</sup></strong>".
     </li>
-    <li>تقع [بيت لحم]<sup>GPE</sup> ضمن سلسلة <strong>[جبال [القدس]<sup>GPE</sup>]<sup>LOC</sup>.</strong></li>
-    <li>يطمع [الإسرائيليون]<sup>GPE</sup> ب<strong>[هضبة الجولان]<sup>LOC</sup> </strong>لأنهم يرون أهمية كبيرة في
+    <li>تقع [بيت لحم]<sup>GPE</sup> ضمن سلسلة <strong class="location">[جبال [القدس]<sup>GPE</sup>]<sup>LOC</sup>.</strong></li>
+    <li>يطمع [الإسرائيليون]<sup>GPE</sup> ب<strong class="location">[هضبة الجولان]<sup>LOC</sup> </strong>لأنهم يرون أهمية كبيرة في
         السيطرة عليها لما تتمتع به من موقع استراتيجي.
     </li>
     <li>أقيم [نصب المقاتل البدوي]<sup>FAC</sup> بالقرب من <strong>[تقاطع الموفيل]<sup>LOC</sup> </strong>في الشمال
         بمبادرة من [سعدي]<sup>PER</sup> الابن.
     </li>
     <li>يمتد الجسر فوق <strong>[نهر الدانوب]<sup>LOC</sup></strong>.</li>
-    <li>في قلب <strong>[بحر البلطيق]<sup>LOC</sup></strong> توجد مجموعة من الجزر المعروفة باسم <strong>[أرخبيل
+    <li>في قلب <strong class="location">[بحر البلطيق]<sup>LOC</sup></strong> توجد مجموعة من الجزر المعروفة باسم <strong>[أرخبيل
         ألاند]<sup>LOC</sup></strong>.
     </li>
 </ol>
 <p>In some cases, the name of a geographically-defined entity also contains the name of a larger geographical area in
     which it is being located. Example:</p>
 <ol style="direction: rtl;">
-    <li>وقعت [الهستدروت]<sup>ORG</sup> ب<strong>[منطقة [الجليل]<sup>LOC</sup> الغربي]<sup>LOC</sup> </strong>وإدارة
+    <li>وقعت [الهستدروت]<sup>ORG</sup> ب<strong class="location">[منطقة [الجليل]<sup>LOC</sup> الغربي]<sup>LOC</sup> </strong>وإدارة
         [مصنع زيكا للصناعات]<sup>ORG</sup> على اتفاقية عمل جماعية خاصة.
     </li>
-    <li>[أعصم السلطي]<sup>PER</sup> الذي يبلغ من العمر 28 عاما من قرية [عيلوط]<sup>GPE</sup> في <strong>[[الجليل]<sup>LOC</sup>
+    <li>[أعصم السلطي]<sup>PER</sup> الذي يبلغ من العمر 28 عاما من قرية [عيلوط]<sup>GPE</sup> في <strong class="location">[[الجليل]<sup>LOC</sup>
         الاسفل]<sup>LOC</sup> </strong>قُتل باطلاق نار في [يوم السبت]<sup>TIMEX</sup>.
     </li>
     <li>يُقام "سوق [الجمعة]<sup>TIMEX</sup>" في مدينة "[الكمار]<sup>GPE</sup>" في <strong>[شمال
@@ -708,10 +748,10 @@
 </ol>
 <p>Notice to exclude instances like “الشمال الغربي من أمستردام”, compared to “شمال غرب أمستردام”.</p>
 <ol style="direction: rtl;">
-    <li>أبدى [الباحث]<sup>TTL</sup> [فيليب شيرر]<sup>PER</sup> من [جامعة <strong>[جنوب [غرب [تكساس]<sup>GPE</sup>]<sup>LOC</sup>]<sup>LOC</sup></strong>
+    <li>أبدى [الباحث]<sup>TTL</sup> [فيليب شيرر]<sup>PER</sup> من [جامعة <strong class="location">[جنوب [غرب [تكساس]<sup>GPE</sup>]<sup>LOC</sup>]<sup>LOC</sup></strong>
         الطبية]<sup>ORG</sup>، دهشته إزاء قدرة [فيروس كورونا]<sup>MISC</sup> على إصابة الخلايا الدهنية في الجسم.
     </li>
-    <li>تقع [توركو]<sup>GPE</sup> على طول <strong>[ساحل [جنوب
+    <li>تقع [توركو]<sup>GPE</sup> على طول <strong class="location">[ساحل [جنوب
         [فنلندا]<sup>GPE</sup>]<sup>LOC</sup>]<sup>LOC</sup></strong>.
     </li>
     <li>[نهر زمبيزي]<sup>LOC</sup> على الحدود بين [زامبيا]<sup>GPE</sup> و[زيمبابوي]<sup>GPE</sup>، في <strong>[جنوب
@@ -724,40 +764,40 @@
     kibbutzim, neighborhoods, etc.</p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li>سوف تغطي ولاية المجلس أرض <strong>[الضفة الغربية]<sup>GPE</sup> و[قطاع غزة]<sup>GPE</sup></strong> باستثناء
+    <li>سوف تغطي ولاية المجلس أرض <strong class="gpe">[الضفة الغربية]<sup>GPE</sup> و[قطاع غزة]<sup>GPE</sup></strong> باستثناء
         القضايا التي سيتم التفاوض عليها في مفاوضات الوضع الدائم.
     </li>
-    <li>حدد نص الاتفاق <strong>[المنطقة "أ"]<sup>GPE</sup></strong> بحدود محددة لبعض المدن، و<strong>[المنطقة "ب"]<sup>GPE</sup></strong>
-        بحدود محددة لمعظم القرى، وعرَّف <strong>[المنطقة "ج"]<sup>GPE</sup> </strong>بأنها <strong>[الضفة الغربية]<sup>GPE</sup>
+    <li>حدد نص الاتفاق <strong class="gpe">[المنطقة "أ"]<sup>GPE</sup></strong> بحدود محددة لبعض المدن، و<strong class="gpe">[المنطقة "ب"]<sup>GPE</sup></strong>
+        بحدود محددة لمعظم القرى، وعرَّف <strong class="gpe">[المنطقة "ج"]<sup>GPE</sup> </strong>بأنها <strong class="gpe">[الضفة الغربية]<sup>GPE</sup>
         </strong>ما دون "أ" و"ب".
     </li>
-    <li>بدأ انتشار الفدائيين الفلسطينيين يتركز في دول الطوق وخاصة <strong>[الأردن]<sup>GPE</sup> و[لبنان]<sup>GPE</sup>
+    <li>بدأ انتشار الفدائيين الفلسطينيين يتركز في دول الطوق وخاصة <strong class="gpe">[الأردن]<sup>GPE</sup> و[لبنان]<sup>GPE</sup>
         و[سوريا]<sup>GPE</sup></strong>.
     </li>
-    <li>هذا التأخير لم يتصدر عناوين نشرات الأخبار بسبب أن <strong>[إسرائيل]<sup>GPE</sup></strong> نجحت في الحصول على
+    <li>هذا التأخير لم يتصدر عناوين نشرات الأخبار بسبب أن <strong class="gpe">[إسرائيل]<sup>GPE</sup></strong> نجحت في الحصول على
         التطعيمات من الشركات الأجنبية.
     </li>
 </ol>
 <p>Referring to a country using the name of its population will also be tagged here:</p>
 <ol style="direction: rtl;">
-    <li>يطمع <strong>[الإسرائيليون]<sup>GPE</sup></strong> ب[هضبة الجولان]<strong><sup>LOC</sup></strong> لأنهم يرون
+    <li>يطمع <strong class="location">[الإسرائيليون]<sup>GPE</sup></strong> ب[هضبة الجولان]<strong class="location"><sup>LOC</sup></strong> لأنهم يرون
         أهمية كبيرة في السيطرة عليها لما تتمتع به من موقع استراتيجي.
     </li>
-    <li>في سنوات الحروب بين <strong>[الفرس]<sup>GPE</sup> و[الرومان]<sup>GPE</sup> </strong>تمكن
+    <li>في سنوات الحروب بين <strong class="gpe">[الفرس]<sup>GPE</sup> و[الرومان]<sup>GPE</sup> </strong>تمكن
         [الإمبراطور]<sup>TTL</sup> " [هرقل]<sup>PER</sup> " من طرد <strong>[الفرس]<sup>GPE</sup> </strong>من
-        ممتلكات<strong> [الدولة الرومانية]<sup>GPE</sup> </strong>[عام 629م]<sup>TIMEX</sup>.
+        ممتلكات<strong class="gpe"> [الدولة الرومانية]<sup>GPE</sup> </strong>[عام 629م]<sup>TIMEX</sup>.
     </li>
 </ol>
 <p>Sometimes GPE entities are separated using a comma, we tag them separately:</p>
 <ol style="direction: rtl;">
-    <li>توفي في [الولايات المتحدة الأمريكية]<strong><sup>GPE</sup></strong> بعد إجرائه لعملية القلب المفتوح في [مركز
-        [تكساس]<sup>GPE</sup> الطبي]<sup>FAC</sup> في <strong>[هيوستن]<sup>GPE</sup>، [تكساس]<sup>GPE</sup></strong>.
+    <li>توفي في [الولايات المتحدة الأمريكية]<strong class="gpe"><sup>GPE</sup></strong> بعد إجرائه لعملية القلب المفتوح في [مركز
+        [تكساس]<sup>GPE</sup> الطبي]<sup>FAC</sup> في <strong class="gpe">[هيوستن]<sup>GPE</sup>، [تكساس]<sup>GPE</sup></strong>.
     </li>
 </ol>
 <p>Some geopolitical entities are named after a smaller geopolitical entity, like a municipality or a province being
     named after a city within them. Make sure to annotate the internal entity as well. For example:</p>
 <ol style="direction: rtl;">
-    <li>[ماربيلا]<sup>GPE</sup> تقع ضمن <strong>[مقاطعة [مالقة]<sup>GPE</sup>]<sup>GPE</sup></strong>.</li>
+    <li>[ماربيلا]<sup>GPE</sup> تقع ضمن <strong class="gpe">[مقاطعة [مالقة]<sup>GPE</sup>]<sup>GPE</sup></strong>.</li>
 </ol>
 <p><strong>FAC</strong></p>
 <p>(Wo)man-made constructions, roughly generalized as objects within the responsibility of civil architecture; such as:
@@ -765,29 +805,29 @@
     stations, bridges, tunnels, streets, etc. </p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li>بنت السلطات البريطانية <strong>[المقاطعة]<sup>FAC</sup> </strong>وسجن<strong> </strong>على بعد 800 متر من
-        <strong>[المنارة]<sup>FAC</sup></strong>، حيث لا يزال الاثنان قائمين.
+    <li>بنت السلطات البريطانية <strong class="fac">[المقاطعة]<sup>FAC</sup> </strong>وسجن<strong> </strong>على بعد 800 متر من
+        <strong class="fac">[المنارة]<sup>FAC</sup></strong>، حيث لا يزال الاثنان قائمين.
     </li>
     <li>قال [بار ديفيد]<sup>PER</sup> انه تلقى نبأ تقاعد سلفه بالضبط في المؤتمر العام الماضي: "قبل عام، استقلت الطائرة
-        في <strong>[مطار دوف]<sup>FAC</sup></strong>.
+        في <strong class="fac">[مطار دوف]<sup>FAC</sup></strong>.
     </li>
-    <li>قمنا بالتنظيم في <strong>[ميناء [حيفا]<sup>GPE</sup>]<sup>FAC</sup></strong>، سنقوم بالتنظيم في <strong>[ميناء
+    <li>قمنا بالتنظيم في <strong class="gpe">[ميناء [حيفا]<sup>GPE</sup>]<sup>FAC</sup></strong>، سنقوم بالتنظيم في <strong>[ميناء
         [أشدود]<sup>GPE</sup>]<sup>FAC</sup></strong>، أيضا لو كانت هناك تحديات.
     </li>
-    <li>في [مكوروت]<sup>ORG</sup> عقدنا اتفاقية مرة في المائة سنة، وفي <strong>[قطار
+    <li>في [مكوروت]<sup>ORG</sup> عقدنا اتفاقية مرة في المائة سنة، وفي <strong class="gpe">[قطار
         [إسرائيل]<sup>GPE</sup>]<sup>FAC</sup></strong> سنقوم بذلك أيضا.
     </li>
     <li>قام قادة إحتجاج السلطات المحلية الدرزية والشركسية بالتظاهر [يوم الاثنين]<sup>TIMEX</sup> من هذا الأسبوع أمام
-        <strong>[بيت [رئيس الحكومة]<sup>TTL</sup>]<sup>FAC</sup></strong> في [القدس]<sup>GPE</sup>.
+        <strong class="fac">[بيت [رئيس الحكومة]<sup>TTL</sup>]<sup>FAC</sup></strong> في [القدس]<sup>GPE</sup>.
     </li>
-    <li>وكان من نصيب [غسان]<sup>PER</sup> الالتحاق <strong>ب[مدرسة الفرير]<sup>FAC</sup> </strong>ب[يافا]<sup>GPE </sup>وكان
+    <li>وكان من نصيب [غسان]<sup>PER</sup> الالتحاق <strong class="fac">ب[مدرسة الفرير]<sup>FAC</sup> </strong>ب[يافا]<sup>GPE </sup>وكان
         يحسد لأنه يدرس [اللغة الفرنسية]<sup>ANG</sup> زيادة عما يدرسه غيره.
     </li>
     <li>بحلول [عام 1905]<sup>TIMEX</sup>، مر طريق جديد يربط [نابلس]<sup>GPE</sup> ب[القدس]<sup>GPE</sup> عبر موقع ساحة
-        <strong>[المنارة]<sup>FAC</sup></strong> ومبنى <strong>[سرايا]<sup>FAC</sup></strong> الذي يضم الإدارة العثمانية
+        <strong class="fac">[المنارة]<sup>FAC</sup></strong> ومبنى <strong class="fac">[سرايا]<sup>FAC</sup></strong> الذي يضم الإدارة العثمانية
         المحلية.
     </li>
-    <li>يقع مجمع <strong>[مستشفى</strong> <strong>هداسا [عين كارم]<sup>GPE</sup>]<sup>FAC </sup></strong>في الجنوب
+    <li>يقع مجمع <strong class="fac">[مستشفى</strong> <strong class="gpe">هداسا [عين كارم]<sup>GPE</sup>]<sup>FAC </sup></strong>في الجنوب
         الغربي من [القدس]<sup>GPE</sup>.
     </li>
     <li>صادقت الحكومة على دخول 3.200 عامل فلسطيني إضافي من [يهودا والسامرة]<sup>GPE</sup> ([الضفة الغربية]<sup>GPE</sup>)
@@ -801,28 +841,28 @@
 <p>An entity may be FAC or ORG, depending on the context if the reference is to the building rather than the
     organization/administration. Compare between the entities in the 2 sets of sentences in the 2 examples below:</p>
 <ol style="direction: rtl;">
-    <li>- توفي في [الولايات المتحدة الأمريكية]<sup>GPE</sup> بعد إجرائه لعملية القلب المفتوح في <strong>[مركز تكساس
-        الطبي]<sup>FAC</sup></strong>.<br>- أعلن <strong>[مستشفى النجاح الوطني الجامعي]<sup>ORG</sup> </strong>عن توقفه
+    <li>- توفي في [الولايات المتحدة الأمريكية]<sup>GPE</sup> بعد إجرائه لعملية القلب المفتوح في <strong class="fac">[مركز تكساس
+        الطبي]<sup>FAC</sup></strong>.<br>- أعلن <strong class="org">[مستشفى النجاح الوطني الجامعي]<sup>ORG</sup> </strong>عن توقفه
         عن استقبال المزيد من مرضى الأورام.
     </li>
     <li>- [حكومة [إسرائيل]<sup>GPE</sup>]<sup>ORG </sup>استثمرت ايضا في تطوير لقاح من انتاج البلاد، ومولت تطوير وانتاج
-        لقاح في <strong>[المعهد البيولوجي]<sup>FAC</sup></strong> في [نس تسيونا]<sup>GPE</sup>.
+        لقاح في <strong class="fac">[المعهد البيولوجي]<sup>FAC</sup></strong> في [نس تسيونا]<sup>GPE</sup>.
     </li>
 </ol>
-<p>- ومع ذلك، على ما يبدو فان الحكومة لم تتطرق بشكل جدي لامكانية ان يطور <strong>[المعهد
+<p>- ومع ذلك، على ما يبدو فان الحكومة لم تتطرق بشكل جدي لامكانية ان يطور <strong class="org">[المعهد
     البيولوجي]<sup>ORG</sup></strong> لقاحا قبل الشركات الكبرى، ولم تمكّنهم من إجراء مراحل التجارب في المقابل، ما أعاق
     التطوير. </p>
 <p>Note that neighborhoods are considered geopolitical entities, whereas streets should be treated as facilities. For
     example:</p>
 <ol style="direction: rtl;">
-    <li>عندما تزوج [غسان]<sup>PER</sup> كان يسكن في <strong>[شارع الحمراء]<sup>FAC</sup> </strong>ثم انتقل إلى <strong>[حي
+    <li>عندما تزوج [غسان]<sup>PER</sup> كان يسكن في <strong class="fac">[شارع الحمراء]<sup>FAC</sup> </strong>ثم انتقل إلى <strong>[حي
         المزرعة]<sup>GPE</sup></strong>.
     </li>
 </ol>
 <p>Opposed to:</p>
 <ol style="direction: rtl;">
-    <li>وكان أبوه يعمل في تجارة الأقمشة في <strong>[حي السكاكيني]<sup>GPE</sup></strong>.</li>
-    <li>سمي ب<strong>[شارع الزهراء]<sup>FAC</sup></strong> نسبة لوجود <strong>[قصر الزهراء]<sup>FAC</sup></strong> فيه
+    <li>وكان أبوه يعمل في تجارة الأقمشة في <strong class="gpe">[حي السكاكيني]<sup>GPE</sup></strong>.</li>
+    <li>سمي ب<strong>[شارع الزهراء]<sup>FAC</sup></strong> نسبة لوجود <strong class="fac">[قصر الزهراء]<sup>FAC</sup></strong> فيه
         هو الاسم الذي أطلقه آل دقاق على بيتهم.
     </li>
     <li>تعتبر [البلدة القديمة]<sup>LOC </sup>في [بيت لحم]<sup>GPE </sup>أهم مناطقها على الإطلاق لوجود أهم المعالم
@@ -831,21 +871,21 @@
             [شارع [بولس السادس]<sup>PER</sup>]<sup>FAC</sup>، [شارع السينما]<sup>FAC</sup>، [شارع الفرير]<sup>FAC</sup>،
             [شارع [جمال عبد الناصر]<sup>PER</sup>]<sup>FAC</sup></strong>.
     </li>
-    <li>توقيف 3 قاصرين من [كفر قاسم]<sup>GPE</sup> بشبهة إلقاء حجارة على سيارات في<strong> [شارع رقم
+    <li>توقيف 3 قاصرين من [كفر قاسم]<sup>GPE</sup> بشبهة إلقاء حجارة على سيارات في<strong class="fac"> [شارع رقم
         5]<sup>FAC</sup></strong>.
     </li>
 </ol>
 <p>In cases of facilities that are named after a person, a geopolitical entity, or a place it is necessary to also tag
     the nested entities. For example:</p>
 <ol style="direction: rtl;">
-    <li>لجنة التسميات في <strong>[بلديّة [القدس]<sup>GPE</sup>]<sup>ORG </sup></strong>الإسرائيليّة قد أعلنت أنها تدرس
+    <li>لجنة التسميات في <strong class="gpe">[بلديّة [القدس]<sup>GPE</sup>]<sup>ORG </sup></strong>الإسرائيليّة قد أعلنت أنها تدرس
         طلبًا قُدِّم من أحد النوّاب الإسرائيليين المتطرفين في [الكنيست]<strong><sup>ORG</sup></strong> لتغيير اسم
-        <strong>[شارع [صلاح الدين]<sup>PER</sup>]<sup>FAC </sup></strong>إلى <strong>[شارع [دونالد ترامب]<sup>PER</sup>]<sup>FAC</sup></strong>.
+        <strong class="person">[شارع [صلاح الدين]<sup>PER</sup>]<sup>FAC </sup></strong>إلى <strong>[شارع [دونالد ترامب]<sup>PER</sup>]<sup>FAC</sup></strong>.
     </li>
 </ol>
 <p>When both the Arabic and foreign names of an entity are provided, both should be tagged separately:</p>
 <ol style="direction: rtl;">
-    <li>مهرجان لوحات الطباشير في <strong>[متنزه السكة]<sup>FAC</sup> ([بارك همسيلاه]<sup>FAC</sup>).</strong> "الأصوات
+    <li>مهرجان لوحات الطباشير في <strong class="fac">[متنزه السكة]<sup>FAC</sup> ([بارك همسيلاه]<sup>FAC</sup>).</strong> "الأصوات
         هامة، لكن الأهم منها هي وحدتها" (تصوير: [طال ألفي]<sup>PER</sup>)
     </li>
 </ol>
@@ -853,17 +893,17 @@
     crucial for understanding the specific entity’s name. A good way of determining: will the meaning stay the same if
     we remove the first noun?</p>
 <ol style="direction: rtl;">
-    <li>سقط عامل عن ارتفاع 8 أمتار في موقع بناء في <strong>[شارع [موشيه شريت]<sup>PER</sup>]<sup>FAC</sup> </strong>في
+    <li>سقط عامل عن ارتفاع 8 أمتار في موقع بناء في <strong class="fac">[شارع [موشيه شريت]<sup>PER</sup>]<sup>FAC</sup> </strong>في
         [تل أبيب]<sup>GPE</sup>.
     </li>
 </ol>
 <p>In sentences where facilities that are named after geopolitical entities are listed, make sure to tag the listed
     items as FAC too.</p>
 <ol style="direction: rtl;">
-    <li>سيتم إنشاء ثمانية مجمعات لقاح للعاملين في [إسرائيل] في معابر <strong>[جلمة]<sup>FAC</sup>، [جبعة]<sup>FAC</sup>،
-        [راخيل]<sup>FAC</sup></strong><br><strong> ([300]<sup>FAC</sup>)، [ميتار]<sup>FAC</sup>، [طولكرم]<sup>FAC</sup>،
+    <li>سيتم إنشاء ثمانية مجمعات لقاح للعاملين في [إسرائيل] في معابر <strong class="fac">[جلمة]<sup>FAC</sup>، [جبعة]<sup>FAC</sup>،
+        [راخيل]<sup>FAC</sup></strong><br><strong class="fac"> ([300]<sup>FAC</sup>)، [ميتار]<sup>FAC</sup>، [طولكرم]<sup>FAC</sup>،
         [قلقيلية]<sup>FAC</sup>، [نعلين]<sup>FAC</sup> و[ترقوميا]<sup>FAC</sup>.</strong></li>
-    <li>سيتم إنشاء أربع مجمعات إضافية، للعاملين في المستوطنات في المناطق الصناعية <strong>[اريئل]<sup>FAC</sup> ،
+    <li>سيتم إنشاء أربع مجمعات إضافية، للعاملين في المستوطنات في المناطق الصناعية <strong class="fac">[اريئل]<sup>FAC</sup> ،
         [باركان]<sup>FAC</sup>، [معلية ادوميم]<sup>FAC</sup>، [إفرات]<sup>FAC</sup>.</strong></li>
 </ol>
 <p><strong>TTL </strong></p>
@@ -872,16 +912,16 @@
     aristocratic titles (سيد/ة), etc.; whether referring to a real-life human-being, or a made-up character. </p>
 <p>For example: </p>
 <ol style="direction: rtl;">
-    <li>قال <strong>[رئيس [الهستدروت]<sup>ORG</sup>]<sup>TTL</sup></strong> أنه "إذا تم تشكيل حكومة تمد يدها لعون
+    <li>قال <strong class="ttl">[رئيس [الهستدروت]<sup>ORG</sup>]<sup>TTL</sup></strong> أنه "إذا تم تشكيل حكومة تمد يدها لعون
         العمال، فسوف يجدونا شركاء.
     </li>
-    <li>قال <strong>[رئيس [لجنة مفعّلي الرافعات البرجية]<sup>ORG</sup>]<sup>TTL</sup></strong>، [دان
+    <li>قال <strong class="ttl">[رئيس [لجنة مفعّلي الرافعات البرجية]<sup>ORG</sup>]<sup>TTL</sup></strong>، [دان
         فرشبسكي]<sup>PER</sup>: "نرحب بالنية في تغيير الأنظمة القديمة منذ عام [1967]<sup>TIMEX</sup>"
     </li>
-    <li>"في [رمضان]<sup>EVE</sup> هناك فرصة لفتح صفحة جديدة " يذكّر <strong>[الشيخ]<sup>TTL</sup> </strong>[عامر]<sup>PER</sup>
+    <li>"في [رمضان]<sup>EVE</sup> هناك فرصة لفتح صفحة جديدة " يذكّر <strong class="ttl">[الشيخ]<sup>TTL</sup> </strong>[عامر]<sup>PER</sup>
         بأمل.
     </li>
-    <li><strong>[عضو [الكنيست]<sup>ORG</sup>]<sup>TTL</sup> </strong>[مفيد مرعي]<sup>PER </sup>([كحول
+    <li><strong class="ttl">[عضو [الكنيست]<sup>ORG</sup>]<sup>TTL</sup> </strong>[مفيد مرعي]<sup>PER </sup>([كحول
         لفان]<sup>ORG</sup>): "هذه شهاد فقر، يجب أن يكون في الخطة المستمرة مال ملون بميزانية الدولة"
     </li>
     <li>شارك <strong>[د.]<sup>TTL</sup></strong> [منصور عباس]<sup>PER</sup> <strong>[رئيس [القائمة العربية الموحدة]<sup>ORG</sup>]<sup>TTL</sup></strong>
@@ -1007,18 +1047,18 @@
     <li>ووفقا لأقواله، "وصلت الفكرة من أحد الطلاب الجامعيين، الذي بدأ يعلّم 4 – 5 أطفال في غرفة صغيرة، بدون <strong>[زوم]<sup>DUC</sup></strong>
         وبدون انترنت. لأنه ليس لدينا بنية تحتية للانترنت."
     </li>
-    <li>بعد مناقصة <strong>[الجيل الخامس]<sup>DUC</sup></strong>، تدرس شركات الاتصالات خطوات إضافية.</li>
-    <li>تتم إدارة الخدمات المصرفية اليوم من خلال الهاتف الذكي (<strong>[الآيفون]<sup>DUC</sup></strong>).</li>
+    <li>بعد مناقصة <strong class="product">[الجيل الخامس]<sup>DUC</sup></strong>، تدرس شركات الاتصالات خطوات إضافية.</li>
+    <li>تتم إدارة الخدمات المصرفية اليوم من خلال الهاتف الذكي (<strong class="product">[الآيفون]<sup>DUC</sup></strong>).</li>
 </ol>
 <p>Social media networks are considered products:</p>
 <ol style="direction: rtl;">
-    <li>وبهدف تحقيق خطتهم، انشأوا مجموعة <strong>[واتس اب]<sup>DUC</sup> </strong>نسقوا فيها تفاصيل خطة المساس.</li>
-    <li>[نتنياهو]<sup>PER</sup> قرر الكتابة عن ذلك على منصة <strong>[تويتر]<sup>DUC</sup>.</strong></li>
-    <li>كتب [هورفيتس]<sup>PER</sup> في حسابه على <strong>[تويتر]<sup>DUC</sup></strong>: "وعدت وأوفيت".</li>
+    <li>وبهدف تحقيق خطتهم، انشأوا مجموعة <strong class="product">[واتس اب]<sup>DUC</sup> </strong>نسقوا فيها تفاصيل خطة المساس.</li>
+    <li>[نتنياهو]<sup>PER</sup> قرر الكتابة عن ذلك على منصة <strong class="product">[تويتر]<sup>DUC</sup>.</strong></li>
+    <li>كتب [هورفيتس]<sup>PER</sup> في حسابه على <strong class="product">[تويتر]<sup>DUC</sup></strong>: "وعدت وأوفيت".</li>
 </ol>
 <p>Except for when the entity’s name is referring to the administration of said product:</p>
 <ol style="direction: rtl;">
-    <li>أعلن <strong>[تويتر]<sup>ORG</sup> </strong>عن نيته حظر حساب [الرئيس الأمريكي]<sup>TTL</sup> [دونالد ترامب]<sup>PER</sup>.
+    <li>أعلن <strong class="org">[تويتر]<sup>ORG</sup> </strong>عن نيته حظر حساب [الرئيس الأمريكي]<sup>TTL</sup> [دونالد ترامب]<sup>PER</sup>.
     </li>
 </ol>
 <p><strong>WOA</strong></p>
@@ -1026,53 +1066,53 @@
     works/papers, theories, etc.</p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li>ومن آثارها النثرية أيضاً: <strong>[أخي [إبراهيم]<sup>PER</sup>]<sup>WOA</sup></strong>، <strong>[رحلة جبلية رحلة
-        صعبة]<sup>WOA</sup></strong> ، <strong>[الرحلة الأصعب]<sup>WOA</sup></strong>.
+    <li>ومن آثارها النثرية أيضاً: <strong class="woa">[أخي [إبراهيم]<sup>PER</sup>]<sup>WOA</sup></strong>، <strong>[رحلة جبلية رحلة
+        صعبة]<sup>WOA</sup></strong> ، <strong class="woa">[الرحلة الأصعب]<sup>WOA</sup></strong>.
     </li>
-    <li>ولعل نشيد "<strong>[موطني]<sup>WOA</sup></strong>"، الذي نسمعه صباح كل يوم في ساحات المدارس ومعاهد التعليم خير
+    <li>ولعل نشيد "<strong class="woa">[موطني]<sup>WOA</sup></strong>"، الذي نسمعه صباح كل يوم في ساحات المدارس ومعاهد التعليم خير
         دليل على بقاء روحه وأدبه في الذاكرة.
     </li>
     <li>يعتقد البعض أن هناك تشابهاً بين مسلسل <strong>[التغريبة الفلسطينية]<sup>WOA</sup> و[الدرب الطويل]<sup>WOA</sup></strong>
-        الذي صور في [الأردن]<strong><sup>GPE</sup></strong> وعُرِضَ عام [2000م]<strong><sup>TIMEX</sup></strong>.
+        الذي صور في [الأردن]<strong class="gpe"><sup>GPE</sup></strong> وعُرِضَ عام [2000م]<strong><sup>TIMEX</sup></strong>.
     </li>
-    <li>ناقشت رواية <strong>[امرأة عند نقطة الصفر]<sup>WOA</sup> </strong>أشكال قهر الرجل للمرأة جسدياً ونفسياً.</li>
+    <li>ناقشت رواية <strong class="woa">[امرأة عند نقطة الصفر]<sup>WOA</sup> </strong>أشكال قهر الرجل للمرأة جسدياً ونفسياً.</li>
 </ol>
 <p>Notice that when it is a specific issue/publication of a newspaper that is being referred to, it should be tagged as
     WOA (unlike editorial boards, or press teams, which should be tagged ORG). Same for news websites.</p>
 <ol style="direction: rtl;">
-    <li>وفقا لصحيفة <strong>[الصنارة]<sup>WOA</sup></strong>، خلال اللقاء عرض [نتنياهو]<sup>PER</sup> خطة المدراء
+    <li>وفقا لصحيفة <strong class="woa">[الصنارة]<sup>WOA</sup></strong>، خلال اللقاء عرض [نتنياهو]<sup>PER</sup> خطة المدراء
         العامين لمكافحة العنف والجريمة في المجتمع العربي.
     </li>
     <li>نشرت مصادر من [حماس]<sup>ORG</sup> هجوما اعلاميا على مساعي [مصر]<sup>GPE</sup> ووعود [السيسي]<sup>PER</sup> عبر
-        جريدة <strong>[الأخبار]<sup>WOA</sup></strong> اللبنانية.
+        جريدة <strong class="woa">[الأخبار]<sup>WOA</sup></strong> اللبنانية.
     </li>
-    <li>جنبا إلى جنب مع جميع مشتركي تطبيقات صحيفة <strong>"[كلكليست]<sup>WOA</sup>"</strong>، تلقى موظفو "[سلكوم]<sup>ORG</sup>"
+    <li>جنبا إلى جنب مع جميع مشتركي تطبيقات صحيفة <strong class="woa">"[كلكليست]<sup>WOA</sup>"</strong>، تلقى موظفو "[سلكوم]<sup>ORG</sup>"
         إبلاغًا مساء [الاثنين]<sup>TIMEX</sup>، يشير إلى أنه من المحتمل أن يفقدوا وظائفهم في الأيام المقبلة.
     </li>
-    <li>كما ارتبطت المشاركة في الأنشطة غير الدراسية بصحة عقلية أفضل حسب موقع <strong>[ساينس
+    <li>كما ارتبطت المشاركة في الأنشطة غير الدراسية بصحة عقلية أفضل حسب موقع <strong class="woa">[ساينس
         دايلي]<sup>WOA</sup></strong>.
     </li>
 </ol>
 <p>As opposed to:</p>
 <ol style="direction: rtl;">
-    <li>أفادت [وزارة التربية والتعليم]<sup>ORG</sup> في تعقيب لها على توجه "<strong>[دفار]<sup>ORG</sup></strong>":
+    <li>أفادت [وزارة التربية والتعليم]<sup>ORG</sup> في تعقيب لها على توجه "<strong class="org">[دفار]<sup>ORG</sup></strong>":
         "تنظر الوزارة بخطورة كبيرة إلى ظاهرة العنف تجاه الطلاب".
     </li>
 </ol>
 <p>The name of an artwork may also include internal entities.</p>
 <p>For example:</p>
 <ol style="direction: rtl;">
-    <li>ويظهر أثر موت أخوها <strong>[إبراهيم]<sup>PER</sup></strong> جلياً عندما نراها تهدي أغلب دواوينها إلى "روح أخي
-        <strong>[إبراهيم]<sup>PER</sup></strong>" ويظهر أيضا من خلال كتابها "<strong>[أخي [إبراهيم]<sup>PER</sup>]<sup>WOA</sup></strong>"
+    <li>ويظهر أثر موت أخوها <strong class="person">[إبراهيم]<sup>PER</sup></strong> جلياً عندما نراها تهدي أغلب دواوينها إلى "روح أخي
+        <strong class="person">[إبراهيم]<sup>PER</sup></strong>" ويظهر أيضا من خلال كتابها "<strong class="woa">[أخي [إبراهيم]<sup>PER</sup>]<sup>WOA</sup></strong>"
         والذي صدر سنة [1946]<a id="_Hlk97038832"></a><sup>TIMEX</sup>.
     </li>
-    <li>"<strong>[عائد إلى [حيفا]<sup>GPE</sup>]<sup>WOA</sup></strong>" وصف فيها رحلة مواطني [حيفا]<sup>GPE</sup> في
+    <li>"<strong class="woa">[عائد إلى [حيفا]<sup>GPE</sup>]<sup>WOA</sup></strong>" وصف فيها رحلة مواطني [حيفا]<sup>GPE</sup> في
         انتقالهم إلى [عكا]<sup>GPE</sup>.
     </li>
 </ol>
 <p>Note: Radio stations should be tagged as ORG, while radio programs should be tagged as WOA. For example:</p>
 <ol style="direction: rtl;">
-    <li>بحسب ما ورد في إذاعة "<strong>[كادينا سير]<sup>ORG</sup></strong>" الاسبانية فإن هناك احتمالية غير ضئيلة ترجح
+    <li>بحسب ما ورد في إذاعة "<strong class="org">[كادينا سير]<sup>ORG</sup></strong>" الاسبانية فإن هناك احتمالية غير ضئيلة ترجح
         رحيل [ميسي]<sup>PER</sup> عن الفريق.
     </li>
 </ol>
@@ -1081,13 +1121,13 @@
 <p>For example:</p>
 <ol style="direction: rtl;">
     <li>فلقد تمكن في أثناء رحلته الدراسية وطلب العلم من إتقان عدة لغات أجنبية،
-        ك<strong>[الإنجليزية]<sup>ANG</sup></strong> علاوة على لغات اخرى مثل <strong>[التركية]<sup>ANG</sup>
+        ك<strong class="language">[الإنجليزية]<sup>ANG</sup></strong> علاوة على لغات اخرى مثل <strong>[التركية]<sup>ANG</sup>
             و[الألمانية]<sup>ANG</sup> و[الإسبانية]<sup>ANG</sup>.</strong></li>
-    <li>ستوزع منظمة "[حاخامات من أجل حقوق الانسان]<sup>ORG</sup>" كتيبات "[الحقوق]<sup>WOA</sup>" ب<strong>[اللغة
-        العبرية]<sup>ANG</sup></strong>، <strong>[اللغة العربية]<sup>ANG</sup></strong> و<strong>[اللغة
+    <li>ستوزع منظمة "[حاخامات من أجل حقوق الانسان]<sup>ORG</sup>" كتيبات "[الحقوق]<sup>WOA</sup>" ب<strong class="language">[اللغة
+        العبرية]<sup>ANG</sup></strong>، <strong class="language">[اللغة العربية]<sup>ANG</sup></strong> و<strong>[اللغة
         الروسية]<sup>ANG</sup>.</strong></li>
-    <li>من المحتمل أن تسمع أشخاصًا يتحدثون <strong>[اللغة السويدية]<sup>ANG</sup></strong> أكثر من
-        <strong>[الفنلندية]<sup>ANG</sup> </strong>ما بين تلك الجزر.
+    <li>من المحتمل أن تسمع أشخاصًا يتحدثون <strong class="language">[اللغة السويدية]<sup>ANG</sup></strong> أكثر من
+        <strong class="language">[الفنلندية]<sup>ANG</sup> </strong>ما بين تلك الجزر.
     </li>
 </ol>
 <p><strong>TIMEX</strong></p>
@@ -1147,20 +1187,20 @@
 </ol>
 <p>In cases where time expressions include a day and a date, we tag each separately:</p>
 <ol style="direction: rtl;">
-    <li><strong>[يوم الجمعة]<sup>TIMEX</sup> ([24.4]<sup>TIMEX</sup>)</strong>، اتخذت [وزارة المالية]<sup>ORG</sup> خطوة
+    <li><strong class="timex">[يوم الجمعة]<sup>TIMEX</sup> ([24.4]<sup>TIMEX</sup>)</strong class="org">، اتخذت [وزارة المالية]<sup>ORG</sup> خطوة
         مهمة وقدمت خطة تعويضات للمصالح التجارية المتضررة من [أزمة [كورونا]<sup>MISC</sup>]<sup>EVE</sup>، لكنها لم تخلق
         حافزًا لإعادتهم إلى العمل.
     </li>
 </ol>
 <p>When time expressions are put in construct states, we tag each noun separately:</p>
 <ol style="direction: rtl;">
-    <li>تم إيقاف هذا المشروع المذهل في <strong>[صيف]<sup>TIMEX</sup> [عام 2018]<sup>TIMEX</sup></strong>، بعد تعرفت
+    <li>تم إيقاف هذا المشروع المذهل في <strong class="timex">[صيف]<sup>TIMEX</sup> [عام 2018]<sup>TIMEX</sup></strong>، بعد تعرفت
         [بوبال]<sup>PER</sup> على حالات المضايقة والاعتداء الجنسي التي ارتكبها أعضاء [الإتحاد الأفغاني]<sup>ORG</sup>.
     </li>
 </ol>
 <p>When the time expression is a range, make sure to tag the first date separately:</p>
 <ol style="direction: rtl;">
-    <li>أحداث العنف في الأسبوع<strong> [12]<sup>TIMEX</sup>[18/12]-<sup>TIMEX</sup></strong>.</li>
+    <li>أحداث العنف في الأسبوع<strong class="timex"> [12]<sup>TIMEX</sup>[18/12]-<sup>TIMEX</sup></strong>.</li>
 </ol>
 <p><strong>MISC</strong></p>
 <p>Any type of entity that cannot be classified into any of the existing categories.</p>
@@ -1169,7 +1209,7 @@
 <ol style="direction: rtl;">
     <li>مرض [ياسر عرفات]<sup>PER</sup> بعد سنتين من حصار ل[لجيش الإسرائيلي]<sup>ORG</sup> له داخل مقره في [رام
         الله]<sup>GPE</sup>، ودخل في <strong>[غيبوبة]<sup>MISC</sup>.</strong></li>
-    <li>لا يعرف سبب الوفاة على التحديد، وقد قال الأطباء أن سبب الوفاة هو <strong>[تليف الكبد]<sup>MISC</sup>.</strong>
+    <li>لا يعرف سبب الوفاة على التحديد، وقد قال الأطباء أن سبب الوفاة هو <strong class="misc">[تليف الكبد]<sup>MISC</sup>.</strong>
     </li>
     <li>وقد توفيت والدته [زهوة أبو السعود]<sup>PER</sup> عندما كان في الرابعة من عمره بسبب <strong>[قصور
         كلوي]<sup>MISC</sup>.</strong></li>
@@ -1180,61 +1220,61 @@
 <p>Initiatives:</p>
 <ol style="direction: rtl;">
     <li>بالنسبة لنا هذا يوم لكل المقدسيين الذين يعيشون هنا"، تقول لـ "[دفار]<sup>ORG</sup>" [طال ألفي]<sup>PER</sup>، من
-        منظمات مبادرة <strong>"[يوم مقدسي – يوم الآخر]<sup>MISC</sup>"</strong>.
+        منظمات مبادرة <strong class="misc">"[يوم مقدسي – يوم الآخر]<sup>MISC</sup>"</strong>.
     </li>
 </ol>
 <p>Awards:</p>
 <ol style="direction: rtl;">
-    <li>وفي [عام 1994]<strong><sup>TIMEX</sup></strong> مُنحت <strong>[جائزة نوبل للسلام]<sup>MISC</sup> </strong>ل[ياسر
+  <li> وفي <strong class="timex"> [عام 1994]<sup>TIMEX</sup></strong> مُنحت <strong class="misc">[جائزة نوبل للسلام]<sup>MISC</sup> </strong>ل[ياسر
         عرفات]<strong><sup>PER</sup></strong>.
     </li>
-    <li>هو الجسر الوحيد في [أوروبا]<sup>LOC</sup> الذي يتم ترشيحه ل<strong>[جائزة أوبال]<sup>MISC</sup></strong>.</li>
+    <li>هو الجسر الوحيد في [أوروبا]<sup>LOC</sup> الذي يتم ترشيحه ل<strong class="misc">[جائزة أوبال]<sup>MISC</sup></strong>.</li>
 </ol>
 <p>Game names:</p>
 <p>Names of rules/laws/projects/political agreements/political entities:</p>
 <ol style="direction: rtl;">
-    <li>"نحن جزء من أقلية وطنية يتم التمييز ضدها في تشريعات مثل <strong>[قانون القومية]<sup>MISC</sup> و[قانون
+    <li>"نحن جزء من أقلية وطنية يتم التمييز ضدها في تشريعات مثل <strong class="misc">[قانون القومية]<sup>MISC</sup> و[قانون
         الجنسية]<sup>MISC</sup></strong>، النساء تعاني من ذلك".
     </li>
-    <li>ومن تلك المفاوضات [مؤتمر [مدريد]<sup>GPE</sup>[1991]<sup>TIMEX</sup>]<sup>EVE</sup>، و<strong>[اتفاقية
+    <li>ومن تلك المفاوضات [مؤتمر [مدريد]<sup>GPE</sup>[1991]<sup>TIMEX</sup>]<sup>EVE</sup>، و<strong class="misc">[اتفاقية
         أوسلو]<sup>MISC</sup>.</strong></li>
-    <li>كسب خطاب [عرفات]<strong><sup>PER</sup></strong> التعاطف مع <strong>[القضية الفلسطينية]<sup>MISC</sup></strong>على
+    <li>كسب خطاب [عرفات]<strong><sup>PER</sup></strong> التعاطف مع <strong class="misc">[القضية الفلسطينية]<sup>MISC</sup></strong>على
         الساحة الدولية.
     </li>
-    <li>"أنا أريد أن أتعاون مع منظمات في العالم الإسلامي، بعيدا عن ساحة <strong>[الصراع الإسرائيلي –
+    <li>"أنا أريد أن أتعاون مع منظمات في العالم الإسلامي، بعيدا عن ساحة <strong class="misc">[الصراع الإسرائيلي –
         الفلسطيني]<sup>MISC</sup></strong>". تقول [لوسكي]<sup>PER</sup>.
     </li>
-    <li>قائد النضال في<strong> [قانون المواطنة]<sup>MISC</sup></strong><sup> </sup>أعرب عن رضاه من إلغائه في
+    <li>قائد النضال في<strong class="misc"> [قانون المواطنة]<sup>MISC</sup></strong><sup> </sup>أعرب عن رضاه من إلغائه في
         [الكنيست]<sup>ORG</sup>.
     </li>
-    <li>بدلا من <strong>[الخط الأخضر]<sup>MISC </sup></strong>نحن نجلب الشارة الخضراء.</li>
+    <li>بدلا من <strong class="misc">[الخط الأخضر]<sup>MISC </sup></strong>نحن نجلب الشارة الخضراء.</li>
 </ol>
 <p>If both the Arabic and the foreign names are provided, both should be tagged separately:</p>
 <ol style="direction: rtl;">
     <li>وبسبب رفض الدولة الاعتراف بهذه القرى، فان سكانها لا يتبعون لسلطة بلدية اي كانت، وبالتالي فانهم لا يدفعون
-        <strong>[ضريبة الأملاك]<sup>MISC</sup> ([الارنونا]<sup>MISC</sup>)</strong>.
+        <strong class="misc">[ضريبة الأملاك]<sup>MISC</sup> ([الارنونا]<sup>MISC</sup>)</strong>.
     </li>
 </ol>
 <p>Scientific names of animal/plant species:</p>
 <ol style="direction: rtl;">
-    <li>الأطعمة الغنية ب<strong>[حمض الأكساليك]<sup>MISC</sup></strong>، كالبقدونس، والفول السوداني.</li>
-    <li>الأطعمة الغنية ب<strong>[حمض الفيتيك]<sup>MISC</sup></strong>، كالأرز البني.</li>
-    <li>يعتبر الحمص والحليب مصدرًا لل<strong>[تربتوفان]<sup>MISC</sup>.</strong></li>
-    <li>نبهوا إلى اهمية تناول الموز الذي يحتوي على ال<strong>[بوتاسيوم]<sup>MISC</sup></strong>
-        وال<strong>[مغنيزيوم]<sup>MISC</sup></strong> وهما ضروريان لمحاربة أعراض [الاكتئاب]<sup>MISC</sup>.
+    <li>الأطعمة الغنية ب<strong class="misc">[حمض الأكساليك]<sup>MISC</sup></strong>، كالبقدونس، والفول السوداني.</li>
+    <li>الأطعمة الغنية ب<strong class="misc">[حمض الفيتيك]<sup>MISC</sup></strong>، كالأرز البني.</li>
+    <li>يعتبر الحمص والحليب مصدرًا لل<strong class="misc">[تربتوفان]<sup>MISC</sup>.</strong></li>
+    <li>نبهوا إلى اهمية تناول الموز الذي يحتوي على ال<strong class="misc">[بوتاسيوم]<sup>MISC</sup></strong>
+        وال<strong class="misc">[مغنيزيوم]<sup>MISC</sup></strong> وهما ضروريان لمحاربة أعراض [الاكتئاب]<sup>MISC</sup>.
     </li>
     <li>في [عام 2007]<sup>TIMEX</sup> لم تتردد شركة [فايزر]<sup>ORG</sup> في إغلاق مختبر فيه 3000 عامل في [ميشيغان]<sup>GPE</sup>،
-        في أعقاب فشل في تجربة دواء ضد ال<strong>[كولسترول]<sup>MISC</sup></strong> الذي قامت بتطويره.
+        في أعقاب فشل في تجربة دواء ضد ال<strong class="misc">[كولسترول]<sup>MISC</sup></strong> الذي قامت بتطويره.
     </li>
 </ol>
 <p>Zodiac signs:</p>
 <ol style="direction: rtl;">
-    <li>הקנטאורים היו קשתים מעולים، ולכן דמותם מסמלת את מזל <strong>[קשת]<sup>MISC</sup></strong> בגלגל המזלות.</li>
+    <li>הקנטאורים היו קשתים מעולים، ולכן דמותם מסמלת את מזל <strong class="misc">[קשת]<sup>MISC</sup></strong> בגלגל המזלות.</li>
 </ol>
 <p>Art movements and genres:</p>
 <p>Ethnic groups:</p>
 <ol style="direction: rtl;">
-    <li>شعب <strong>[التاميل]<sup>MISC</sup></strong> هم أقلية عرقية في [سري لانكا]<sup>GPE</sup>، التي تعيش في أكثر
+    <li>شعب <strong class="misc">[التاميل]<sup>MISC</sup></strong> هم أقلية عرقية في [سري لانكا]<sup>GPE</sup>، التي تعيش في أكثر
         منطقة تضررت من [التسونامي]<sup>MISC</sup>.
     </li>
 </ol>
