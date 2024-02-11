@@ -3,8 +3,10 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
+    - navigation.path
     - toc.integrate
     - toc.github
     - toc.sections
@@ -14,9 +16,6 @@ theme:
     - content.tabs.link
     - content.code.annotate
     - content.code.copy
-    - navigation.tabs
-    - navigation.sections
-    - navigation.path
 markdown_extensions:
   - md_in_html
   - pymdownx.highlight:
